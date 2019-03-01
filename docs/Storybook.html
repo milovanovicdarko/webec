@@ -10,7 +10,7 @@
 	   }
 	caption {
 	   text-align: left;
-	   line-height: 2.0;
+	   //line-height: 2.0;
 	   color: maroon;
 	   text-decoration: underline;
 	   font-weight: bold
@@ -20,14 +20,18 @@
 	   padding-right: 15px;
 	   }
 	   
+	   /*
 	   tr + tr + tr {
 	       color: red;
 		}
-		
-		.blau {
+		*/
+		.blueLine {
 		    color: blue;
 		}
 		
+		.redLine {
+		    color: red;
+			}
 		/*
 		tr + tr + tr + tr {
 		    color: black;}
@@ -35,7 +39,8 @@
 		*/
 		
 		tr span {
-			color: magenta;
+			color: red;
+			font-weight: bold
 		}
 	   </style>
 </head>
@@ -52,32 +57,32 @@
 
     </section>
     <section id="content">
-        <h1>Delivery dates and examination details</h1>
+        <!-- <h1>Delivery dates and examination details</h1> -->
         <article>
             <h2>Overview</h2>
             <table>
-                <caption>Delivery dates:</caption>
-                <thead>       <tr><th> Date   </th><th>  # </th><th>Topic</th></tr></thead>
+                <!-- <caption>Delivery dates:</caption> -->
+                <thead>       <tr><th> Date   </th><th>   </th><th>Topic</th></tr></thead>
                 <tbody>   
-				<tr><td> Di, 19.02.19 </td><td> 12:15 - 15:00 </td><td> HTML	</td></tr>
-				<tr><td> Di, 26.02.19 </td><td> 12:15 - 15:00 </td><td> CSS </td></tr>	
-				<tr><td> Di, 05.03.19 </td><td> 12:15 - 15:00 </td><td> Grails, Web, MVC</td></tr>
-				<tr><td> Di, 12.03.19 </td><td> 12:15 - 15:00 </td><td> GSP, Template, Taglib, Layout	</td></tr>	
-				<tr><td> Di, 19.03.19 </td><td> 12:15 - 15:00 </td><td> Consolidation training, Testing	</td></tr>
-				<tr><td> Di, 26.03.19 </td><td> 12:15 - 15:00 </td><td> Persistence, DB-Access (GORM)	</td></tr>	
-				<tr class="blau"><td> Di, 02.04.19 </td><td> 12:15 - 15:00 </td><td> REST, Services	    </td></tr>                      	
-				<tr><td> Di, 09.04.19 </td><td> 12:15 - 15:00 </td><td> Role-based Security	</td></tr>                      	
-				<tr><td> Di, 16.04.19 </td><td> 12:15 - 15:00 </td><td> Übungsvorbereitung ** <span>Anwesenheitspflicht</span> **	</td></tr>
+				<tr><td> Di, 19.02.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> HTML	</td></tr>
+				<tr><td> Di, 26.02.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> CSS </td></tr>	
+				<tr><td> Di, 05.03.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Grails, Web, MVC</td></tr>
+				<tr><td> Di, 12.03.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> GSP, Template, Taglib, Layout	</td></tr>	
+				<tr><td> Di, 19.03.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Consolidation training, Testing	</td></tr>
+				<tr><td> Di, 26.03.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Persistence, DB-Access (GORM)	</td></tr>	
+				<tr><td> Di, 02.04.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> REST, Services	    </td></tr>                      	
+				<tr><td> Di, 09.04.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Role-based Security	</td></tr>                      	
+				<tr class="blueLine"><td> Di, 16.04.19 </td><td> 12:15 - 15:00 </td><td> Übungsvorbereitung <span> ** Anwesenheitspflicht ** </span>	</td></tr>
 
-				<tr><td> Di, 30.04.19 </td><td> 12:15 - 15:00 </td><td> Übungsanlass </td></tr>
+				<tr><td> Di, 30.04.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Übungsanlass </td></tr>
 					
-				<tr><td> Di, 14.05.19 </td><td> 12:15 - 15:00 </td><td> Übungsanlass	 </td></tr>         	
-				<tr><td> Di, 21.05.19 </td><td> 12:15 - 15:00 </td><td> Javascript, **Übungsabgabe**	</td></tr>
-				<tr><td> Di, 28.05.19 </td><td> 12:15 - 15:00 </td><td> Responsive / Mobile Web 	</td></tr>
-				<tr><td> Di, 04.06.19 </td><td> 12:15 - 15:00 </td><td> Deployment	    </td></tr>      	
-				<tr><td> Di, 11.06.19 </td><td> 12:15 - 15:00 </td><td> Prüfungsvorbereitung </td></tr>
+				<tr><td> Di, 14.05.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Übungsanlass	 </td></tr>         	
+				<tr class="blueLine"><td> Di, 21.05.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Javascript, <span>** Übungsabgabe **</span>	</td></tr>
+				<tr><td> Di, 28.05.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Responsive / Mobile Web 	</td></tr>
+				<tr><td> Di, 04.06.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Deployment	    </td></tr>      	
+				<tr><td> Di, 11.06.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Prüfungsvorbereitung </td></tr>
                 </tbody>
-                <tfoot><tr><td colspan="3"> MSP date to be announced</td> </tr></tfoot>
+                <tfoot><tr class="redLine"><td colspan="3"> MSP date to be announced</td> </tr></tfoot>
             </table>
         </article>
         <article>
